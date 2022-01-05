@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainDangNhap"
+    android:orientation="vertical"
+    android:background="#DAD6D6">
+
+<TextView
+    android:textColor="#ff00"
+    android:layout_marginTop="150dp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textSize="40sp"
+    android:text="Đăng Nhâp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:drawableRight="@drawable/ic_taikhoan"
+        android:id="@+id/edit_taikhoan"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:hint="Tài khoản"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_matkhau"
+        android:id="@+id/edit_matkhau"
+        android:layout_gravity="center"
+        android:hint="Mật khẩu"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"></EditText>
+
+    <Button
+        android:id="@+id/button_dangnhap"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Đăng nhập"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+    <Button
+        android:id="@+id/button_dangky"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Đăng ký"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+</LinearLayout>

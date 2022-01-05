@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainNoiDung">
+
+    <TextView
+        android:background="#111C2E"
+        android:textColor="#f00"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="Tên Truyện"
+        android:id="@+id/TenTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></TextView>
+
+    <TextView
+        android:textColor="#000000"
+        android:background="#DAD6D6"
+        android:scrollbars="vertical"
+        android:textSize="25sp"
+        android:text="Nội dung"
+        android:id="@+id/noidung"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TextView>
+
+</LinearLayout>

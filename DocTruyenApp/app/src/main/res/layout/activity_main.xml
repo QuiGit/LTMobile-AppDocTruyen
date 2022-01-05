@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAD6D6"
+    tools:context=".MainActivity">
+
+   <androidx.drawerlayout.widget.DrawerLayout
+       android:id="@+id/drawerlayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <androidx.appcompat.widget.Toolbar
+               app:titleTextColor="#ff00"
+               android:background="#111C2E"
+               android:id="@+id/toolbarmanhinhchinh"
+               app:title="Tủ Truyện"
+               android:layout_width="match_parent"
+               android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar
+>
+
+           <ViewFlipper
+               android:id="@+id/viewflipper"
+               android:layout_width="match_parent"
+               android:layout_height="150dp"></ViewFlipper>
+
+           <LinearLayout
+               android:background="#DAD6D6"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:padding="20dp"
+                   android:textColor="#ff00"
+                   android:textStyle="bold"
+                   android:textSize="25sp"
+                   android:text="Mới nhất"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"></TextView>
+
+               <ListView
+                   android:padding="5dp"
+                   android:background="#03A0F4"
+                   android:id="@+id/listviewNew"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"></ListView>
+           </LinearLayout>
+       </LinearLayout>
+
+       <com.google.android.material.navigation.NavigationView
+           android:layout_gravity="start"
+           android:id="@+id/navigationView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <ListView
+               android:id="@+id/listviewthongtin"
+               android:layout_width="match_parent"
+               android:layout_height="150dp"></ListView>
+           <ListView
+               android:id="@+id/listviewmanhinhchinh"
+               android:layout_marginTop="150dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></ListView>
+       </com.google.android.material.navigation.NavigationView>
+   </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

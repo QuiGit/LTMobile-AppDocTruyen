@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DAD6D6"
+    tools:context=".MainAdmin">
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/buttonThemTruyen"
+        android:text="Thêm truyện"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"></Button>
+    <ListView
+        android:padding="10dp"
+        android:background="#03A0F4"
+        android:id="@+id/listviewAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
